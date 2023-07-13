@@ -15,7 +15,10 @@ const parseDate = (dateFromRequest: any): string =>{
 }
 
 const parseWeather = (weatherFromRequest: any): Weather =>{
-    if(!isString(weatherFromRequest) || )
+    if(!isString(weatherFromRequest) || !isWeather(weatherFromRequest)){
+        throw new Error('Incorrect or missing weather')
+    }
+    return weatherFromRequest;
 }
 
 const isWeather = (string: string): boolean=>{
