@@ -1,14 +1,4 @@
-export type Visibility = 'great' | 'good' | 'ok' | 'poor'
-
-export enum Weather{
-    Sunny = 'sunny',
-    rainy = 'rainy',
-    cloudy = 'cloudy',
-    windy = 'windy',
-    stormy ='stormy'
-}
-
-
+import { Visibility,Weather } from "./enum"
 export interface DiaryEntry{
     id: number,
     date: string,
